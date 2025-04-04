@@ -1,9 +1,10 @@
 import uuid
 class Item:
-   def __init__(self, id = None, condition = 0):
+   def __init__(self, id = None, condition = 0, age = None):
       self.id = uuid.uuid1().int if id is None else id
       self.category = "Item"
       self.condition = condition
+      self.age = age
    
    def get_category(self):
       return self.category
@@ -14,7 +15,7 @@ class Item:
    def condition_description(self):
       match(self.condition):
          case 0.0:
-            return "Yikes!"
+            return "It sucks!"
          case 1.0:
             return "Not worth it."
          case 2.0:
@@ -25,7 +26,3 @@ class Item:
             return "Such a deal."
          case 5.0:
             return "You're in luck, this is a steal."
-   
-   
-   
-   
