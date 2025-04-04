@@ -28,7 +28,7 @@ def test_clothing_has_expected_default_to_str():
 
 # @pytest.mark.skip
 def test_clothing_has_expected_to_str_with_custom_fabric():
-    clothing = Clothing(id=TEST_CUSTOM_ID, fabric="Pinstriped")
+    clothing = Clothing(id=TEST_CUSTOM_ID, fabric="Pinstrip                       ed")
     expected_str = (
         f"An object of type Clothing with id {TEST_CUSTOM_ID}. "
         "It is made from Pinstriped fabric."
