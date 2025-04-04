@@ -30,7 +30,7 @@ def test_get_item_by_id():
     test_id = 12345
     item_custom_id = Item(id=test_id)
     vendor = Vendor(
-        inventory=[Item(), Item(), item_custom_id]
+        inventory=[Item(), Item(), item_custom_id] 
     )
 
     result_item = vendor.get_by_id(test_id)
