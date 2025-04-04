@@ -13,17 +13,17 @@ class Item:
    
    def condition_description(self):
       match(self.condition):
-         case 0:
+         case 0.0:
             return "Yikes!"
-         case 1:
+         case 1.0:
             return "Not worth it."
-         case 2:
+         case 2.0:
             return "This looks rough."
-         case 3:
+         case 3.0:
             return "Good but not great."
-         case 4:
+         case 4.0:
             return "Such a deal."
-         case 5:
+         case 5.0:
             return "You're in luck, this is a steal."
    
    
