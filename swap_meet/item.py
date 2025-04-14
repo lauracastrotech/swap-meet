@@ -9,6 +9,7 @@ class Item:
    def get_category(self):
       return self.category
    
+   # @MARINA this is where we have repetition in subclasses
    def __str__(self):
       return f"An object of type Item with id {self.id}."
    
