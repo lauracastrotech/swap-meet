@@ -10,7 +10,7 @@ class Item:
       return self.category
    
    def __str__(self):
-      return f"An object of type Item with id {self.id}."
+      return f"An object of type {self.get_category()}with id {self.id}."
    
    def condition_description(self):
       match(self.condition):
