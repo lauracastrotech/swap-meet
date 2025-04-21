@@ -1,6 +1,6 @@
 from .item import Item
 class Decor(Item):
-    def __init__(self, id = None, width = 0, length = 0, condition = 0, age = None):
+    def __init__(self, id=None, width=0, length=0, condition=0, age=None):
         super().__init__(id, condition, age)
         self.category = "Decor"
         self.width = width

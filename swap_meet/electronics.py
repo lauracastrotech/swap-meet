@@ -1,6 +1,6 @@
 from .item import Item
 class Electronics(Item):
-    def __init__(self, id = None, type = "Unknown", condition = 0, age = None):
+    def __init__(self, id=None, type="Unknown", condition=0, age=None):
         super().__init__(id, condition, age)
         self.category = "Electronics"
         self.type = type
