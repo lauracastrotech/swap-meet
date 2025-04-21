@@ -4,5 +4,9 @@ class Electronics(Item):
         super().__init__(id, condition, age)
         self.category = "Electronics"
         self.type = type
+
+    def get_category(self):
+        return "Electronics"
+      
     def __str__(self):
         return super().__str__() + f" This is a {self.type} device."
