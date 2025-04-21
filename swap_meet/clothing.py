@@ -5,4 +5,4 @@ class Clothing(Item):
         self.category = "Clothing"
         self.fabric = fabric
     def __str__(self):
-        return super().__str__() + f"It is made from {self.fabric} fabric."
+        return super().__str__() + f" It is made from {self.fabric} fabric."
