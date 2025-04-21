@@ -264,7 +264,7 @@ def test_swap_best_by_category_no_other_match_is_false():
     assert item_f in jesse.inventory
 
 def test_swap_by_newest():
-     # Arrange
+    # Arrange
     item_a = Decor(condition=2.0, age=2)
     item_b = Electronics(condition=4.0, age=5)
     item_c = Decor(condition=4.0, age=3)
@@ -280,7 +280,7 @@ def test_swap_by_newest():
     )
 
     # Act
-    result = tai.swap_by_newest(other_vendor=jesse)
+    result = tai.swap_by_newest(jesse)
 
     assert result == True
     assert len(tai.inventory) == 3
