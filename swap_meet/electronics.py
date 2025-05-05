@@ -5,8 +5,6 @@ class Electronics(Item):
         self.category = "Electronics"
         self.type = type
 
-    def get_category(self):
-        return "Electronics"
-      
     def __str__(self):
-        return super().__str__() + f" This is a {self.type} device."
+        return (f"An object of type {self.get_category()} with id {self.id}. "
+                f"This is a {self.type} device.")
